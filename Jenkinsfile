@@ -2,7 +2,7 @@ node {
     stage('checkout') {
 
         sh '''
-
+	            mkdir ${JENKINS_HOME}/init.groovy.d/
 		    git clone https://github.com/zeroisme/jenkins_config_as_code.git ${JENKINS_HOME}/jenkins_config
 			mv ${JENKINS_HOME}/jenkins_config/src/*.groovy ${JENKINS_HOME}/init.groovy.d/
 
