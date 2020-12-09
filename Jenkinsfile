@@ -3,8 +3,8 @@ node {
 
         sh '''
 
-		    git clone ssh://git@your_scm_here/jenkins_config_as_code.git ${JENKINS_HOME}/jenkins_config
-			mv ${JENKINS_HOME}/jenkins_config/*.groovy ${JENKINS_HOME}/init.groovy.d/
+		    git clone https://github.com/zeroisme/jenkins_config_as_code.git ${JENKINS_HOME}/jenkins_config
+			mv ${JENKINS_HOME}/jenkins_config/config/*.groovy ${JENKINS_HOME}/init.groovy.d/
 
 		'''
     }
