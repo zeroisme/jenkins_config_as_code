@@ -11,7 +11,7 @@ node {
 
     stage('run consul template'){
         sh '''
-			consul-template \
+			/var/jenkins_home/consul-template \
 			  -consul-addr "$CONSUL_ADDR" \
 			  -vault-addr "$VAULT_ADDR" \
 			  -config "jenkins_config.hcl" \
